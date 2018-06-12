@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.szxs.entity">
+    <class name="Peitems" table="tbl_peitems">
+        <id name="itemid">
+            <generator class="sequence">
+                <param name="sequence">seq_peitems_id</param>
+            </generator>
+        </id>
+
+        <property name="itemname"/>
+        <property name="necessary"/>
+        <property name="ref"/>
+        <property name="price"/>
+        <property name="info"/>
+
+        <many-to-one name="itemtypes" class="Itemtypes" column="typeid" />
+    </class>
+</hibernate-mapping>

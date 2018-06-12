@@ -1,0 +1,9 @@
+1、导入SSH整合的所有jar包
+2、写实体类和映射的文件
+3、写Dao接口和实现类
+4、写Service接口和实现类
+5、写Action类
+6、写struts.xml配置文件，配置action中和方法和名称
+7、web.xml文件中配置struts的过滤器和加载spring的监听器
+8、配置spring的XML文件，在此文件中要配置数据源、会话工厂、事务、扫描所有的注解BEAN。
+9.写页面
